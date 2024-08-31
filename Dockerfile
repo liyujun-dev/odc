@@ -1,4 +1,4 @@
-FROM owasp/dependency-check:10.0.3
+FROM owasp/dependency-check:latest
 
 ARG NVD_API_KEY
 RUN /usr/share/dependency-check/bin/dependency-check.sh --updateonly --nvdApiKey ${NVD_API_KEY}
